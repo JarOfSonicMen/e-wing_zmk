@@ -1,1 +1,11 @@
-
+file_format: "1"
+id: e-wing
+name: E-wing
+type: shield
+url: 
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - e-wing_left
+  - e-wing_right
