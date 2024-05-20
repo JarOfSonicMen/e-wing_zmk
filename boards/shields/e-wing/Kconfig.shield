@@ -1,8 +1,8 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config SHIELD_ERGODASH_LEFT
-    def_bool $(shields_list_contains,ergodash_left)
+config SHIELD_E-WING_LEFT
+    def_bool $(shields_list_contains,e-wing_left)
 
-config SHIELD_ERGODASH_RIGHT
-    def_bool $(shields_list_contains,ergodash_right)
+config SHIELD_E-WING_RIGHT
+    def_bool $(shields_list_contains,e-wing_right)
