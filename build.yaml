@@ -7,11 +7,14 @@
 #
 # board: [ "nice_nano_v2" ]
 # shield: [ "corne_left", "corne_right" ]
-include:
-     board: nice_nano_v2
-     shield: e-wing_left
-     board: nice_nano_v2
-     shield: e-wing_right
+board: [ "nice_nano_v2" ]
+shield: [ "e-wing_left", "e-wing_right" ]
+
+# include:
+#     board: nice_nano_v2
+#     shield: e-wing_left
+#     board: nice_nano_v2
+#     shield: e-wing_right
      
 #   - board: bdn9_rev2
 #   - board: nice_nano_v2
@@ -21,4 +24,4 @@ include:
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
 #
----
+#  ---
