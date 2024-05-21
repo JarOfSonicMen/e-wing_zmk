@@ -1,4 +1,11 @@
-[
+{
+    "lighting": "none",
+    "matrix": {
+        "rows": 6,
+        "cols": 6
+    },
+    "layouts": {
+        "keymap":[
   {
     "name": "E-wing both halves"
   },
@@ -371,3 +378,5 @@
     ""
   ]
 ]
+    }
+}
