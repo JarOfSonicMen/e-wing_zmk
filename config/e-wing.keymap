@@ -75,6 +75,11 @@
             bindings = <&kp Z>;
             key-positions = <40 39>;
         };
+
+        qu {
+            bindings = <&qu_combo>;
+            key-positions = <38 39>;
+        };
     };
 
     macros {
@@ -83,6 +88,34 @@
             #binding-cells = <0>;
             bindings = <&kp Q &kp U>;
             label = "QU_COMBO";
+        };
+
+        the_macro: the_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp H &kp E>;
+            label = "THE_MACRO";
+        };
+
+        and_macro: and_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp N &kp D>;
+            label = "AND_MACRO";
+        };
+
+        oe_macro: oe_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp E>;
+            label = "OE_MACRO";
+        };
+
+        au_macro: au_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp U>;
+            label = "AU_MACRO";
         };
     };
 
@@ -104,7 +137,7 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp ENTER  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &kp PERIOD  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&sl 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans  &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &trans  &trans  &trans  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp ENTER  &trans  &trans  &kp K_REDO  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &kp PERIOD  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
