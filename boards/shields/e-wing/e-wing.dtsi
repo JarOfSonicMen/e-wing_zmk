@@ -15,7 +15,7 @@
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
-        rows = <5>;
+        rows = <6>;
 
 // | SW1  | SW5  | SW9  | SW13 | SW17 | SW21 | SW25 |      |    |      | SW25 | SW21 | SW17 | SW13 | SW9  | SW5  | SW1  |
 // | SW2  | SW6  | SW10 | SW14 | SW18 | SW22 | SW26 |      |    |      | SW26 | SW22 | SW18 | SW14 | SW10 | SW6  | SW2  |
@@ -40,21 +40,21 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(5,5)       RC(5,11) RC(3,11) 
         diode-direction = "col2row";
 
         row-gpios
-            = <&gpio0 17  GPIO_ACTIVE_HIGH >
-            , <&gpio0 20  GPIO_ACTIVE_HIGH >
-            , <&gpio0 22  GPIO_ACTIVE_HIGH >
-            , <&gpio0 24  GPIO_ACTIVE_HIGH >
-            , <&gpio1 00  GPIO_ACTIVE_HIGH >
-            , <&gpio1 11  GPIO_ACTIVE_HIGH >
+            = <&gpio0 17  GPIO_ACTIVE_HIGH  | GPIO_PULL_DOWN>
+            , <&gpio0 20  GPIO_ACTIVE_HIGH  | GPIO_PULL_DOWN>
+            , <&gpio0 22  GPIO_ACTIVE_HIGH  | GPIO_PULL_DOWN>
+            , <&gpio0 24  GPIO_ACTIVE_HIGH  | GPIO_PULL_DOWN>
+            , <&gpio1 00  GPIO_ACTIVE_HIGH  | GPIO_PULL_DOWN>
+            , <&gpio1 11  GPIO_ACTIVE_HIGH  | GPIO_PULL_DOWN>
             ;
 
         col-gpios
-            = <&gpio0 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio0 21 (GPIO_ACTIVE_HIGH)>
+            , <&gpio0 20 (GPIO_ACTIVE_HIGH )>
+            , <&gpio0 19 (GPIO_ACTIVE_HIGH )>
+            , <&gpio1 18 (GPIO_ACTIVE_HIGH )>
+            , <&gpio1 15 (GPIO_ACTIVE_HIGH )>
+            , <&gpio1 14 (GPIO_ACTIVE_HIGH )>
             ;
     };
 
