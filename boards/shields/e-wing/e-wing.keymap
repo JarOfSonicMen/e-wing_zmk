@@ -12,7 +12,7 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
-
+This does not get compiled at all.
 &out OUT_USB
 
 / {
