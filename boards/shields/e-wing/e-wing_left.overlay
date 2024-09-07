@@ -5,3 +5,6 @@
  */
 
 #include "e-wing.dtsi"
+#include <dt-bindings/zmk/outputs.h>
+&out OUT_USB
+
