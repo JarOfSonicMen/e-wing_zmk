@@ -4,7 +4,6 @@
 
 &out OUT_USB
 
-this is a test
 config SHIELD_E-WING_LEFT
     def_bool $(shields_list_contains,e-wing_left)
 
