@@ -4,6 +4,8 @@
 
 &out OUT_USB
 
+this is a test
+
 config SHIELD_ERGODASH_LEFT
     def_bool $(shields_list_contains,ergodash_left)
 
