@@ -1,8 +1,8 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
-//#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/outputs.h>
 
-//&out OUT_USB
+&out OUT_USB
 
 config SHIELD_E-WING_LEFT
     def_bool $(shields_list_contains,e-wing_left)
