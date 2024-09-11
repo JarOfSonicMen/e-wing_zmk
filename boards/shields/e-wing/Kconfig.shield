@@ -6,3 +6,4 @@ config SHIELD_E-WING_LEFT
 
 config SHIELD_E-WING_RIGHT
     def_bool $(shields_list_contains,e-wing_right)
+
