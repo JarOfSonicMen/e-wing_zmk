@@ -9,8 +9,8 @@
 # shield: [ "corne_left", "corne_right" ]
 include:
      - board: [ "nice_nano_v2" ]
-     shield: [ "e-wing_left", "e-wing_right" ]
-     snippet: zmk-usb-logging
+     - shield: [ "e-wing_left", "e-wing_right" ]
+     - snippet: zmk-usb-logging
 
 # include:
 #     board: nice_nano_v2
