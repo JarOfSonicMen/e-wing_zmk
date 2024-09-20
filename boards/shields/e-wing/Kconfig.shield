@@ -1,6 +1,6 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
-
+CONFIG_ZMK_USB_LOGGING=y
 config SHIELD_E-WING_LEFT
     def_bool $(shields_list_contains,e-wing_left)
 
